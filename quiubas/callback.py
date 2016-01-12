@@ -5,4 +5,3 @@ class callback( base ):
 		base.__init__( self, quiubas )
 		self.base_name		= 'callback'
 		self.action_name	= 'callback'
-

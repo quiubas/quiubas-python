@@ -9,6 +9,6 @@ class sms( base ):
 	def send( self, params ):
 		return self.action( params )
 
-	def getResponses( self, id ):
-		return self.quiubas.network.get( [ self.action_name + '/responses', { 'id': params.id } ], params )
+	def getResponses( self, id, params = None ):
+		return self.quiubas.network.get( [ self.action_name + '/responses', { 'id': id } ], params )
 

@@ -45,7 +45,6 @@ class Quiubas:
 		parsed_vars = dict()
 
 		for k in vars.keys():
-			print vars[k]
 			if vars[k] is not None:
 				parsed_vars['{' + k + '}'] = urllib.quote_plus(vars[k])
 
