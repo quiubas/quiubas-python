@@ -4,6 +4,8 @@ from requests import auth
 from exception import error
 
 class network:
+	requests.packages.urllib3.disable_warnings()
+	
 	def __init__( self, quiubas ):
 		self.quiubas = quiubas
 

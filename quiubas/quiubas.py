@@ -22,11 +22,11 @@ class Quiubas:
 		self.sms = sms( self )
 
 	def setBaseURL( self, url ):
-		self.BASE_URL = url
-		return self.BASE_URL
+		self.base_url = url
+		return self.base_url
 
 	def getBaseURL( self ):
-		return self.BASE_URL
+		return self.base_url
 
 	def setAuth( self, api_key, api_private ):
 		self.api_key = api_key
