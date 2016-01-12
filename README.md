@@ -25,7 +25,7 @@ pip install quiubas
 
 from quiubas import Quiubas
 
-quiubas = quiubas()
+quiubas = Quiubas()
 quiubas.setAuth( 'api_key', 'api_private' )
 
 response = quiubas.sms.send( {
