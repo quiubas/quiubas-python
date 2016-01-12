@@ -1,4 +1,4 @@
-# Quiubas PHP Library
+# Quiubas Python Library
 
 ## Requirements
 - Python Python 2.7.10 +
