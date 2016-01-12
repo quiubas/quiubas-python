@@ -16,6 +16,6 @@ class base:
 	def update( self, id = None, params = None ):
 		return self.quiubas.network.put( [ self.action_name, { 'id': id } ], params )
 
-	def getAll( self, params ):
+	def getAll( self, params = None ):
 		return self.quiubas.network.get( self.base_name, params )
 

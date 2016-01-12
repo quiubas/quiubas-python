@@ -44,11 +44,13 @@ class Quiubas:
 
 		parsed_vars = dict()
 
-		for k in vars:
+		for k in vars.keys():
+			print vars[k]
 			if vars[k] is not None:
-				parsed_vars['{' + k + '}'] = urllib.urlencode( vars[k] )
+				parsed_vars['{' + k + '}'] = urllib.quote_plus(vars[k])
 
 		regex = re.compile("(%s)" % "|".join(map(re.escape, parsed_vars.keys())))
+
 		if len(parsed_vars) != 0:
 			return regex.sub(lambda mo: str(parsed_vars[mo.string[mo.start():mo.end()]]), path)
 		else:
