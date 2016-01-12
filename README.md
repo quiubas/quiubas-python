@@ -31,7 +31,6 @@ quiubas.setAuth( 'api_key', 'api_private' )
 response = quiubas.sms.send( {
 	'to_number': '+52552512421',
 	'message' : 'Hello there'
-
 })
 
 print response
