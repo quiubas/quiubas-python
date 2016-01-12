@@ -8,7 +8,7 @@ from sms import sms
 
 class Quiubas:
 	def __init__( self ):
-		self.lib_version		= '1.0.1'
+		self.lib_version		= '1.0.0'
 		self.api_key			= None
 		self.api_private		= None
 		self.base_url			= 'https://rest.quiubas.com'
