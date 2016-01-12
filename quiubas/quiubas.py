@@ -1,9 +1,10 @@
 import re
 import urllib
 from network import network
-from sms import sms
-from keywords import keywords
+from balance import balance
 from callback import callback
+from keywords import keywords
+from sms import sms
 
 class Quiubas:
 	def __init__( self ):
@@ -14,9 +15,11 @@ class Quiubas:
 		self.version			= '1.0'
 
 		self.network = network( self )
-		self.sms = sms( self )
-		self.keywords = keywords( self )
+
+		self.balance = balance( self )
 		self.callback = callback( self )
+		self.keywords = keywords( self )
+		self.sms = sms( self )
 
 	def setBaseURL( self, url ):
 		self.BASE_URL = url
