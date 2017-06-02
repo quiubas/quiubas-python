@@ -5,10 +5,11 @@ from balance import balance
 from callback import callback
 from keywords import keywords
 from sms import sms
+from mnp import mnp
 
 class Quiubas:
 	def __init__( self ):
-		self.lib_version		= '1.0.0'
+		self.lib_version		= '1.0.1'
 		self.api_key			= None
 		self.api_private		= None
 		self.base_url			= 'https://rest.quiubas.com'
@@ -20,6 +21,7 @@ class Quiubas:
 		self.callback = callback( self )
 		self.keywords = keywords( self )
 		self.sms = sms( self )
+		self.mnp = mnp( self )
 
 	def setBaseURL( self, url ):
 		self.base_url = url
