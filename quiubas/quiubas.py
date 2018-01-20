@@ -6,13 +6,14 @@ from callback import callback
 from keywords import keywords
 from sms import sms
 from mnp import mnp
+from shortcodes import shortcodes
 
 class Quiubas:
 	def __init__( self ):
-		self.lib_version		= '1.0.2'
+		self.lib_version		= '1.0.3'
 		self.api_key			= None
 		self.api_private		= None
-		self.base_url			= 'https://api.quiubas.com'
+		self.base_url			= 'https://127.0.0.1'
 		self.version			= '2.0'
 
 		self.network = network( self )
@@ -22,6 +23,7 @@ class Quiubas:
 		self.keywords = keywords( self )
 		self.sms = sms( self )
 		self.mnp = mnp( self )
+		self.shortcodes = shortcodes( self )
 
 	def setBaseURL( self, url ):
 		self.base_url = url
