@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
   name = 'quiubas',
   packages = ['quiubas'], # this must be the same as the name above
-  version = '1.0',
+  version = '1.2',
   description = 'Quiubas Python Library for REST API',
   author = 'Augusto Lozada',
   author_email = 'augustolzd@gmail.com',
