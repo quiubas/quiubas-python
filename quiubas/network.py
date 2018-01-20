@@ -30,7 +30,10 @@ class network:
 
 		request_method = getattr(requests, method.lower())
 
-		headers = {'user-agent': 'Quiubas-Python/' + self.quiubas.lib_version}
+		headers = {
+			'user-agent': 'Quiubas-Python/' + self.quiubas.lib_version
+		}
+
 
 		auth_info = self.quiubas.getAuth()
 		auth_info = auth.HTTPBasicAuth( auth_info['api_key'], auth_info['api_private'] )
@@ -53,7 +56,7 @@ class network:
 		return response
 
 	def getBaseURL( self ):
-		return self.quiubas.getBaseURL() + '/' + self.quiubas.version + '/'
+		return self.quiubas.getBaseURL() + '/'
 
 	def formatBaseURL( self, path ):
 		return self.getBaseURL() + path;

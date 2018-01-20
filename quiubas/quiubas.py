@@ -9,11 +9,11 @@ from mnp import mnp
 
 class Quiubas:
 	def __init__( self ):
-		self.lib_version		= '1.0.1'
+		self.lib_version		= '1.0.2'
 		self.api_key			= None
 		self.api_private		= None
-		self.base_url			= 'https://rest.quiubas.com'
-		self.version			= '1.0'
+		self.base_url			= 'https://api.quiubas.com'
+		self.version			= '2.0'
 
 		self.network = network( self )
 
