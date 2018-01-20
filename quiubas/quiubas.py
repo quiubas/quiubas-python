@@ -13,7 +13,7 @@ class Quiubas:
 		self.lib_version		= '1.0.3'
 		self.api_key			= None
 		self.api_private		= None
-		self.base_url			= 'https://127.0.0.1'
+		self.base_url			= 'https://api.quiubas.com'
 		self.version			= '2.0'
 
 		self.network = network( self )
