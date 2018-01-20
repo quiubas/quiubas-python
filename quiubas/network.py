@@ -31,7 +31,8 @@ class network:
 		request_method = getattr(requests, method.lower())
 
 		headers = {
-			'user-agent': 'Quiubas-Python/' + self.quiubas.lib_version
+			'user-agent': 'Quiubas-Python/' + self.quiubas.lib_version,
+			'Content-Type': 'application/json'
 		}
 
 
@@ -44,7 +45,7 @@ class network:
 			if method == 'GET':
 				request = request_method( url, auth=auth_info, timeout=timeout, headers=headers, verify=False, params=params )
 			else:
-				request = request_method( url, auth=auth_info, timeout=timeout, headers=headers, verify=False, data=params )
+				request = request_method( url, auth=auth_info, timeout=timeout, headers=headers, verify=False, json=params )
 		except ValueError as e:
 			raise error( 'There was an error trying communicating with Quiubas Server: ' + str(e) )
 
