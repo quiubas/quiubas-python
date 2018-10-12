@@ -4,9 +4,7 @@ setup.py
 quiubas\__init__.py
 quiubas\balance.py
 quiubas\base.py
-quiubas\callback.py
 quiubas\exception.py
-quiubas\keywords.py
 quiubas\network.py
 quiubas\quiubas.py
 quiubas\sms.py

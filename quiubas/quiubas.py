@@ -2,15 +2,11 @@ import re
 import urllib
 from network import network
 from balance import balance
-from callback import callback
-from keywords import keywords
 from sms import sms
-from mnp import mnp
-from shortcodes import shortcodes
 
 class Quiubas:
 	def __init__( self ):
-		self.lib_version		= '1.0.3'
+		self.lib_version		= '1.1.0'
 		self.api_key			= None
 		self.api_private		= None
 		self.base_url			= 'https://api.quiubas.com'
@@ -19,11 +15,7 @@ class Quiubas:
 		self.network = network( self )
 
 		self.balance = balance( self )
-		self.callback = callback( self )
-		self.keywords = keywords( self )
 		self.sms = sms( self )
-		self.mnp = mnp( self )
-		self.shortcodes = shortcodes( self )
 
 	def setBaseURL( self, url ):
 		self.base_url = url
