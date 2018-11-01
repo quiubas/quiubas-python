@@ -8,3 +8,4 @@ quiubas\exception.py
 quiubas\network.py
 quiubas\quiubas.py
 quiubas\sms.py
+quiubas\mnp.py

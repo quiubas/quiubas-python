@@ -6,11 +6,11 @@ from sms import sms
 
 class Quiubas:
 	def __init__( self ):
-		self.lib_version		= '1.1.0'
+		self.lib_version		= '1.1.1'
 		self.api_key			= None
 		self.api_private		= None
 		self.base_url			= 'https://api.quiubas.com'
-		self.version			= '2.0'
+		self.version			= '2.1'
 
 		self.network = network( self )
 
